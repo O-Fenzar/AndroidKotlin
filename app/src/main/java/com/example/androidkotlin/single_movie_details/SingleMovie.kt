@@ -1,4 +1,4 @@
-package com.example.androidkotlin.Single_Movie_Details
+package com.example.androidkotlin.single_movie_details
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
