@@ -1,4 +1,4 @@
-package com.example.androidkotlin.data.Repository
+package com.example.androidkotlin.data.repository
 
 enum class Status {
     SUCCESS,

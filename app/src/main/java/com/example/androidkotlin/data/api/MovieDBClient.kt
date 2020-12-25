@@ -1,4 +1,4 @@
-package com.example.androidkotlin.data.API
+package com.example.androidkotlin.data.api
 
 //import kotlinx.android.synthetic.main.activity_single_movie.view.*
 import okhttp3.Interceptor

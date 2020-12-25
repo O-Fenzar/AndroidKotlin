@@ -1,4 +1,4 @@
-package com.example.androidkotlin.data.API
+package com.example.androidkotlin.data.api
 
 import com.example.androidkotlin.data.valueObject.MovieDetails
 import io.reactivex.Single
