@@ -21,7 +21,7 @@
         android:id="@+id/progress_bar_item"
         android:layout_gravity="center"
         style="?android:attr/progressBarStyle"/>
-    
+
 
 
 

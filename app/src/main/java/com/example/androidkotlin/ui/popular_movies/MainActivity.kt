@@ -1,4 +1,4 @@
-package com.example.androidkotlin.ui
+package com.example.androidkotlin.ui.popular_movies
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
@@ -14,12 +14,12 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        button.setOnClickListener {
+      /*  button.setOnClickListener {
 
             val intent = Intent(this, SingleMovie::class.java)
             intent.putExtra("id", 299534)
             this.startActivity(intent)
 
-        }
+        }*/
     }
 }
