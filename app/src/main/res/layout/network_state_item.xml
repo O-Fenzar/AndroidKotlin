@@ -22,7 +22,4 @@
         android:layout_gravity="center"
         style="?android:attr/progressBarStyle"/>
 
-
-
-
 </LinearLayout>

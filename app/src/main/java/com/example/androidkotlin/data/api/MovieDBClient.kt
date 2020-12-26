@@ -25,8 +25,6 @@ object MovieDBClient {
 
         val requestInterceptor = Interceptor { chain ->
 
-            //Interceptor take only one argument which is a Lambda function so parenthesis can be omitted
-
             val url = chain.request()
                 .url()
                 .newBuilder()
@@ -52,6 +50,6 @@ object MovieDBClient {
             .addCallAdapterFactory(RxJava2CallAdapterFactory.create())
             .addConverterFactory(GsonConverterFactory.create())
             .build()
-            .create(MovieDBInterface:: class.java)
+            .create(MovieDBInterface::class.java)
     }
 }

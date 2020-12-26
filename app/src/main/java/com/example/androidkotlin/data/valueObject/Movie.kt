@@ -4,12 +4,13 @@ package com.example.androidkotlin.data.valueObject
 import com.google.gson.annotations.SerializedName
 
 data class Movie(
-    val page: Int,
-    @SerializedName("result")
-    val movieList: List<Movie>,
-    @SerializedName("total_pages")
-    val totalPages: Int,
-    @SerializedName("total_results")
-    val totalResults: Int
 
+    val id: Int,
+    val title: String,
+    @SerializedName("released_date")
+    val releaseDate: String,
+    @SerializedName("poster_path")
+    val posterPath:String
 )
+
+

@@ -1,6 +1,7 @@
 package com.example.androidkotlin.data.repository
 
 enum class Status {
+
     SUCCESS,
     RUNNING,
     FAILED

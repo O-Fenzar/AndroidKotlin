@@ -7,7 +7,7 @@ import com.example.androidkotlin.data.valueObject.MovieDetails
 import io.reactivex.disposables.CompositeDisposable
 
 
-class SingleMovieViewModel (private val movieRepository : MovieDetailsRepository, movieId: Int) : ViewModel() {
+class SingleMovieViewModel (private val movieRepository : MovieDetailsRepository, movieId: Int): ViewModel() {
 
 
     private val compositeDisposable = CompositeDisposable()

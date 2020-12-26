@@ -21,7 +21,7 @@ class MainActivityViewModel(private val movieRepository : MoviePagedListReposito
         movieRepository.getNetworkState()
     }
 
-    fun listEmpty(): Boolean {
+    fun listIsEmpty(): Boolean {
 
         return moviePagedList.value?.isEmpty() ?: true
     }

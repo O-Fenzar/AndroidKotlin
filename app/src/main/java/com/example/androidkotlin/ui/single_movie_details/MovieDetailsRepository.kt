@@ -13,7 +13,7 @@ class MovieDetailsRepository (private val apiService : MovieDBInterface) {
 
     lateinit var movieDetailsNetworkDataSource: MovieDetailsNetworkDataSource
 
-    fun fetchSingleMovieDetails (compositeDisposable: CompositeDisposable, movieId : Int) : LiveData<MovieDetails> {
+    fun fetchSingleMovieDetails (compositeDisposable: CompositeDisposable, movieId: Int) : LiveData<MovieDetails> {
 
         movieDetailsNetworkDataSource = MovieDetailsNetworkDataSource(apiService, compositeDisposable)
         movieDetailsNetworkDataSource.fetchMovieDetails(movieId)
@@ -22,14 +22,9 @@ class MovieDetailsRepository (private val apiService : MovieDBInterface) {
 
     }
 
-
     fun getMovieDetailsNetworkState(): LiveData<NetworkState> {
 
         return movieDetailsNetworkDataSource.networkState
 
     }
-
-
-
-
 }

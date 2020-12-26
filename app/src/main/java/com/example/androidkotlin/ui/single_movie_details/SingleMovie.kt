@@ -20,7 +20,7 @@ import java.util.*
 
 class SingleMovie : AppCompatActivity() {
 
-    private lateinit var viewModel : SingleMovieViewModel
+    private lateinit var viewModel: SingleMovieViewModel
     private lateinit var movieRepository: MovieDetailsRepository
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -50,7 +50,7 @@ class SingleMovie : AppCompatActivity() {
         movie_tagline.text = it.tagline
         movie_release_date.text = it.releaseDate
         movie_rating.text = it.rating.toString()
-        movie_runtime.text = it.runtime.toString() + "minutes"
+        movie_runtime.text = it.runtime.toString() + " minutes"
         movie_overview.text = it.overview
 
         val formatCurrency = NumberFormat.getCurrencyInstance(Locale.US)
@@ -67,10 +67,10 @@ class SingleMovie : AppCompatActivity() {
 
         return ViewModelProviders.of(this, object : ViewModelProvider.Factory {
 
-            override  fun<T : ViewModel?> create(modelClass: Class<T>) : T {
+            override fun <T : ViewModel?> create(modelClass: Class<T>): T {
 
                 return SingleMovieViewModel(movieRepository, movieId) as T
             }
-        }) [SingleMovieViewModel:: class.java]
+        }) [SingleMovieViewModel::class.java]
     }
 }
