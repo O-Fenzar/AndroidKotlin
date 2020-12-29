@@ -12,6 +12,7 @@ import androidx.recyclerview.widget.GridLayoutManager
 import com.example.androidkotlin.R
 import com.example.androidkotlin.data.api.MovieDBClient
 import com.example.androidkotlin.data.api.MovieDBInterface
+import com.example.androidkotlin.data.local.model.User
 import com.example.androidkotlin.data.repository.NetworkState
 import com.example.androidkotlin.ui.single_movie_details.SingleMovie
 import kotlinx.android.synthetic.main.activity_main.*
@@ -32,6 +33,7 @@ class MainActivity : AppCompatActivity() {
 
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
 
       /*  button.setOnClickListener {       // Test SingleMovieDetails
 
@@ -62,9 +64,9 @@ class MainActivity : AppCompatActivity() {
             }
         };
 
-        movie_list_rv.layoutManager = gridLayoutManager
-        movie_list_rv.setHasFixedSize(true)
-        movie_list_rv.adapter = movieAdapter
+        rv_movie_list.layoutManager = gridLayoutManager
+        rv_movie_list.setHasFixedSize(true)
+        rv_movie_list.adapter = movieAdapter
 
         viewModel.moviePagedList.observe(this, Observer {
 
@@ -76,7 +78,7 @@ class MainActivity : AppCompatActivity() {
             main_progress_bar.visibility = if(viewModel.listIsEmpty() && it == NetworkState.LOADING) View.VISIBLE
             else View.GONE
 
-            text_error_pm.visibility = if(viewModel.listIsEmpty() && it == NetworkState.ERROR) View.VISIBLE
+            txt_error_popular.visibility = if(viewModel.listIsEmpty() && it == NetworkState.ERROR) View.VISIBLE
             else View.GONE
 
             if(!viewModel.listIsEmpty()) {
