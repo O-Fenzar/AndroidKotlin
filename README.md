@@ -33,7 +33,7 @@ L'application utilise l'Api "themoviedb.org".
 * Utilisation d'une réelle BDD via l'architecture ROOM
 * Affichage d'une liste dans un RecyclerView
 * Affichage du détail d'un item de la liste
-* Fonctions supplémentaires :
+* Outils supplémentaires :
 	* Retrofit
 	* Glide
 	* Gson
