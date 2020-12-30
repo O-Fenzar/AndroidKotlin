@@ -39,6 +39,7 @@ L'application utilise l'Api "themoviedb.org".
 	* Gson
 	* Rxjava
 	* Coroutine
+	* ViewModel et liveData
 	
 
 ## Fonctionnalités: 
